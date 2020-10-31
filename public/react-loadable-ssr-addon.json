@@ -12,14 +12,14 @@
       "css": [
         {
           "file": "main.css",
-          "hash": "eeb28ff636a350205bf3",
+          "hash": "1da9e5a355073700da0f",
           "publicPath": "/main.css"
         }
       ],
       "js": [
         {
           "file": "bundle.js",
-          "hash": "eeb28ff636a350205bf3",
+          "hash": "1da9e5a355073700da0f",
           "publicPath": "/bundle.js"
         }
       ]

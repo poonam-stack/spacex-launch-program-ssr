@@ -9,7 +9,8 @@ import App from '../shared/containers/App'
 import getSpacexLaunches from '../shared/apis/fetchLaunches';
 import manifest from '../../public/react-loadable-ssr-addon.json';
 
-const app = express()
+const app = express();
+const port = process.env.PORT || 3001
 app.use(cors())
 app.use(express.static("public"))
 app.get("/", (req, res, next) => {
@@ -58,8 +59,8 @@ app.get("/", (req, res, next) => {
     });
 })
 Loadable.preloadAll().then(() => {
-  app.listen(3003, () => {
-    console.log('Running on port 3003');
+  app.listen(port, () => {
+    console.log('Running on port '+port);
   });
 }).catch(err => {
   console.log(err);

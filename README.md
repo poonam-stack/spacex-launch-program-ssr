@@ -44,3 +44,7 @@ On the browser, when the javascript runs, react will realize that the component 
 - npm start | npm run start - Creates a build-in development and provides an Express server which should have been started by now.
 - Check for informational console message on the server to ensure that all the dependencies are properly installed and the server is up and running.
 - Navigate to http://localhost:3001/, and find the app running.
+
+
+# Lighthouse Score
+![lighthouseScore](https://user-images.githubusercontent.com/51441748/97778759-5b460e80-1b9f-11eb-940f-7cd202d994aa.png)

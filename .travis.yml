@@ -7,5 +7,5 @@ install:
   - npm ci
 
 script:
-  - npm install
+  - npm install --dev
   - npm start

@@ -9,3 +9,11 @@ install:
 script:
   - npm install --dev
   - npm start
+
+deploy:
+  provider: heroku
+  api_key: 56db2e91-c8da-4db5-b4e3-51d82165119e
+    secure: KEY
+  app: spacex-launch-program-ssr
+  on:
+    repo: poonam-stack/spacex-launch-program-ssr

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import Filters from '../components/Filters';
 import LaunchList from '../components/LaunchList';
 import Footer from '../components/Footer';
@@ -31,5 +32,9 @@ const Main = ({ launchData, urlParams, routeProps }) => {
          <Footer />
       </main>)
 }
-
+Main.propTypes = {
+   launchData: PropTypes.array,
+   urlParams: PropTypes.string,
+   routeProps: PropTypes.object,
+};
 export default Main;

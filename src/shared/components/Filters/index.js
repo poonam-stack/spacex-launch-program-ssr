@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import urlFormatter from '../../utils';
+import PropTypes from 'prop-types';
 import './index.css'
 
 const Filters = ({ year, urlParams, routeProps, setYear, setLaunchSuccess, setLandingSuccess }) => {
@@ -43,51 +45,15 @@ const Filters = ({ year, urlParams, routeProps, setYear, setLaunchSuccess, setLa
         <div className="filterSubHeading">Successful Landing</div>
         <div className="filterOptions">{landStatus}</div>
       </div>
-
     </div>
-
   )
 }
-
-
-const urlFormatter = (locnData, filter, filterVal) => {
-
-  if (!locnData && filterVal)
-    return `?${filter}=${filterVal}`
-  if (!locnData && !filterVal)
-    return ``
-
-  if (locnData.indexOf(filter) > -1) {
-    if ((["launchSuccess", "landSuccess"].includes(filter))) {
-      if (filterVal) {
-        return locnData
-      } else {
-        let t = locnData.split('?')[1].split('&').filter(el => el.indexOf(filter) == -1)
-        if (t.length > 0)
-          return `?${t.join("&")}`
-      }
-    }
-    else {
-      if (locnData.indexOf(filterVal) > -1) {
-        let t = locnData.split('?')[1].split('&').filter(el => el.indexOf(filter) == -1)
-        if (t.length > 0)
-          return `?${t.join("&")}`
-      }
-      else {
-        return `${locnData.replace(locnData.split('year=')[1].substr(0, 4), filterVal)}`
-      }
-    }
-  } else {
-    if ((["launchSuccess", "landSuccess"].includes(filter))) {
-      if (filterVal) {
-        return `${locnData}&${filter}=${filterVal}`
-      }
-      return `${locnData}`
-    }
-    else {
-      return `${locnData}&${filter}=${filterVal}`
-    }
-  }
-  return ``
-}
+Filters.propTypes = {
+  year: PropTypes.string,
+  urlParams: PropTypes.string,
+  routeProps: PropTypes.object,
+  setYear: PropTypes.func,
+  setLaunchSuccess: PropTypes.func,
+  setLandingSuccess: PropTypes.func
+};
 export default Filters;

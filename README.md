@@ -53,7 +53,7 @@ On the browser, when the javascript runs, react will realize that the component 
 
 # Lighthouse Score
 - on Localhost:
-![lighthouse](https://user-images.githubusercontent.com/51441748/97817281-54172180-1cc1-11eb-95bb-afb2932d67b0.png)
+![lighthouseScore-localhost-1](https://user-images.githubusercontent.com/51441748/97817340-c425a780-1cc1-11eb-939a-31b0e4ac4f45.png)
 
 - on Localhost with selections
 ![lighthouse-WithSelection](https://user-images.githubusercontent.com/51441748/97817298-6db86900-1cc1-11eb-8cc5-7ba1f312b610.png)

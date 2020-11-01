@@ -29,7 +29,7 @@ const Filters = ({ year, urlParams, routeProps, setYear, setLaunchSuccess, setLa
 
   let landStatus = [true, false];
   landStatus = landStatus.map((a) => (<Link
-    to={`${urlFormatter(queryParams, "launchSuccess", a)}`} key={`landSuccess-${a}`}
+    to={`${urlFormatter(queryParams, "landSuccess", a)}`} key={`landSuccess-${a}`}
     onClick={() => setLandingSuccess(a)}
     className={queryParams.indexOf(`landSuccess=${a}`) > -1 ? 'activeLink' : ''}
   >{`${a}`}

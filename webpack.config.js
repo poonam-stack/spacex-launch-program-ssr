@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 var nodeExternals = require('webpack-node-externals')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ReactLoadableSSRAddon = require("react-loadable-ssr-addon");
 
 var browserConfig = {
   entry: './src/browser/index.js',
@@ -32,6 +33,9 @@ var browserConfig = {
   },
   mode: 'production',
   plugins: [
+    new ReactLoadableSSRAddon({
+      filename: './react-loadable-ssr-addon.json',
+    }),
     new MiniCssExtractPlugin({
         filename: "[name].css",
         chunkFilename: '[id].css',

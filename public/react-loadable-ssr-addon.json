@@ -1,0 +1,28 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "main": [
+      0
+    ]
+  },
+  "assets": {
+    "0": {
+      "css": [
+        {
+          "file": "main.css",
+          "hash": "c7ce640effd039484207",
+          "publicPath": "/main.css"
+        }
+      ],
+      "js": [
+        {
+          "file": "bundle.js",
+          "hash": "c7ce640effd039484207",
+          "publicPath": "/bundle.js"
+        }
+      ]
+    }
+  }
+}

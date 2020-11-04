@@ -31,8 +31,13 @@ On the browser, when the javascript runs, react will realize that the component 
 # Responsive Design
 
 - Mobile View - Page is having one column until 700px.
+![mobileView](https://user-images.githubusercontent.com/51441748/97817318-9b051700-1cc1-11eb-996a-5aff4fd5e69a.png)
+
 - Tablet View - Page is having 2 columns between 700 and 1024px.
+![tabletView](https://user-images.githubusercontent.com/51441748/97817319-9b9dad80-1cc1-11eb-86dd-55bbd0a60ca9.png)
+
 - Desktop View - Page ia having 4 columns between 1024 and 1440px.
+![desktopView](https://user-images.githubusercontent.com/51441748/97817315-98a2bd00-1cc1-11eb-9a4b-f1b4f35bcceb.png)
 
 
 # To get started
@@ -47,4 +52,16 @@ On the browser, when the javascript runs, react will realize that the component 
 
 
 # Lighthouse Score
-![lighthouseScore](https://user-images.githubusercontent.com/51441748/97778759-5b460e80-1b9f-11eb-940f-7cd202d994aa.png)
+- on Localhost:
+![lighthouseScore-localhost-1](https://user-images.githubusercontent.com/51441748/97817340-c425a780-1cc1-11eb-939a-31b0e4ac4f45.png)
+
+- on Localhost with selections
+![lighthouse-WithSelection](https://user-images.githubusercontent.com/51441748/97817298-6db86900-1cc1-11eb-8cc5-7ba1f312b610.png)
+
+- on Heroku
+![lighthouseRes_Heroku](https://user-images.githubusercontent.com/51441748/97817317-9a6c8080-1cc1-11eb-8ba6-f0c9c0fc0d2d.png)
+
+-on Heroku with Selection
+![lighthouse-heroku1](https://user-images.githubusercontent.com/51441748/97817316-9a6c8080-1cc1-11eb-825e-817ab48d4f56.png)
+
+Onservation on Lighthouse score - It varied based on internet speed as well. But at all points remained in 90s line.

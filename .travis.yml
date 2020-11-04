@@ -3,11 +3,13 @@ language : node_js
 node_js:
   - 12
 
+cache: npm 
+
 install:
-  - npm ci
+  - npm install
 
 script:
-  - npm start
+  - npm run build
 
 deploy:
   provider: heroku
